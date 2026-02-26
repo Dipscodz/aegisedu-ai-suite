@@ -35,9 +35,7 @@ model = XGBClassifier(
 
 model.fit(X_train, y_train)
 
-# --------------------------
-# 5. Evaluation
-# --------------------------
+
 
 y_pred = model.predict(X_test)
 
@@ -45,9 +43,7 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 print("\nClassification Report:\n")
 print(classification_report(y_test, y_pred))
 
-# --------------------------
-# 6. Save Model
-# --------------------------
+
 
 joblib.dump(model, "models/phishing_model.pkl")
 
