@@ -44,7 +44,7 @@ print("\nClassification Report:\n")
 print(classification_report(y_test, y_pred))
 
 
-
-joblib.dump(model, "models/phishing_model.pkl")
+joblib.dump(model, "models/phishing_model.joblib")
+joblib.dump(X.columns.tolist(), "models/feature_columns.joblib")
 
 print("\nModel saved successfully!")
