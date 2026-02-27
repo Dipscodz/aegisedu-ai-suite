@@ -9,7 +9,7 @@ feature_columns = joblib.load("models/feature_columns.joblib")
 
 st.set_page_config(page_title="AegisEDU AI", layout="wide")
 
-st.title("🛡️ AegisEDU AI")
+st.title(" AegisEDU AI")
 st.subheader("AI-Powered URL Phishing Detection System")
 
 url_input = st.text_input("Enter a URL to analyze:")
@@ -35,5 +35,5 @@ if st.button("Analyze URL"):
         elif probability > 0.4:
             st.warning("⚠ MEDIUM RISK - Suspicious URL")
         else:
-            st.success("✅ LOW RISK - Appears legitimate")
+            st.success(" LOW RISK - Appears legitimate")
             
